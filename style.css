@@ -68,14 +68,14 @@ img#profile:hover {
   display: inline-block;
 }
 
-#hire:hover .btn{
+#hire:hover .btn, #hire:active .btn{
   transform: rotate(360deg);
   transition: 10s;
   /*transform: translate(400px, 0px);*/
 }
 
 /*.btn:hover p*/
-#hire:hover p:after{
+#hire:hover p:after, #hire:active p:after{
     /*content: url('https://i2.wp.com/jesuisungameur.com/wp-content/uploads/2017/11/bon-chance.jpg?fit=625%2C416&ssl=1');*/
     /*width: 50%;*/
     content: url('images/bon-chance.jpg');
