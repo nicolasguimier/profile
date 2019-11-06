@@ -68,7 +68,7 @@ img#profile:hover {
   display: inline-block;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (min-width: 540px) {
 
   #hire:hover .btn, #hire:active .btn{
     transform: rotate(360deg);
@@ -84,18 +84,18 @@ img#profile:hover {
   }
 }
 
-@media (hover: none) {
+@media (hover: none), (max-width: 540px){
 
-  #hire-touchpad .btn {
+  #hire .btn {
     transition: 2s;
   }
-  #hire-touchpad .btn:hover, #hire-touchpad .btn:active{
+  #hire .btn:hover, #hire .btn:active{
     /*transform: rotate(360deg);*/
     transform: translate(400px, 0px);
     transition: 0s;
   }
 
-  #hire-touchpad:hover p:after, #hire-touchpad:active p:after {
+  #hire:hover p:after, #hire:active p:after {
     content: url('images/bon-chance.jpg');
     transition: 2s;
   }
