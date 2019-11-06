@@ -108,3 +108,9 @@ img#profile:hover {
     font-size:50px;
   }
 }
+
+@media (hover: none) {
+  #hire{
+    display: none;
+  }
+}
