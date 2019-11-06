@@ -1,0 +1,110 @@
+/*@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap")*/
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: gray;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(10,10,10);
+}
+
+.container{
+  width: 80%;
+  margin: 0px auto;
+  position:relative;
+}
+.card {
+  background,
+  border : 1px dotted #000;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0);
+  margin: 50px 0;
+  padding: 30px;
+}
+
+h1, h2, h3 {
+  color: rgb(30,30,30);
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+img#profile {
+  width: 300px;
+}
+
+img#profile:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+.compteur img:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.div-social ul {
+  padding: 0px;
+}
+
+.div-social li {
+  list-style-type: none;
+  display: inline;
+}
+
+.div-social a {
+  text-decoration: none;
+  color : rgb(0,0,240);
+}
+
+#hire {
+  padding: 30px 0;
+}
+
+.btn a{
+  background-color: red;
+  color: green;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(49, 225, 60, 0.5);
+  display: inline-block;
+}
+
+#hire:hover .btn{
+  transform: rotate(360deg);
+  transition: 10s;
+  /*transform: translate(400px, 0px);*/
+}
+
+/*.btn:hover p*/
+#hire:hover p:after{
+    /*content: url('https://i2.wp.com/jesuisungameur.com/wp-content/uploads/2017/11/bon-chance.jpg?fit=625%2C416&ssl=1');*/
+    /*width: 50%;*/
+    content: url('images/bon-chance.jpg');
+    transition: 2s;
+/*    position: absolute;
+    bottom: 0;
+    right: 0;*/
+}
+
+
+@media (max-width: 540px){
+  body {
+    text-align: center;
+  }
+  img#profile {
+    width: 100%;
+  }
+
+/*
+  .div-social {
+    text-align: center;
+  }
+  .div-social li {
+    display: block;
+  }*/
+  .div-social span{
+    display:none;
+  }
+  .div-social .fab{
+    font-size:50px;
+  }
+}
