@@ -84,6 +84,22 @@ img#profile:hover {
     bottom: 0;
     right: 0;*/
 }
+#hire-touchpad {
+  display: none;
+}
+#hire-touchpad .btn {
+  transition: 2s;
+}
+#hire-touchpad .btn:hover, #hire-touchpad .btn:active{
+  /*transform: rotate(360deg);*/
+  transform: translate(400px, 0px);
+  transition: 0s;
+}
+
+#hire-touchpad:hover p:after, #hire-touchpad:active p:after {
+  content: url('images/bon-chance.jpg');
+  transition: 2s;
+}
 
 
 @media (max-width: 540px){
@@ -113,4 +129,8 @@ img#profile:hover {
   #hire{
     display: none;
   }
+
+  #hire-touchpad {
+  display: block;
+}
 }
